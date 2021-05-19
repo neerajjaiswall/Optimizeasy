@@ -1,11 +1,16 @@
 import "./App.css";
+import { ChakraProvider } from "@chakra-ui/react";
+import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="App">
-      <Footer />
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        < NavBar /> 
+        <Footer />
+      </div>
+    </ChakraProvider>
   );
 }
 
