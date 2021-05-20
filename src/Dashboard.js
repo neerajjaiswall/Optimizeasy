@@ -1,7 +1,7 @@
 function Dashboard() {
   return (
     <div>
-      <h2 style="margin: 1em auto;">My Dashboard</h2>
+      <h2  className="pageHeader">My Dashboard</h2>
     </div>
   );
 }

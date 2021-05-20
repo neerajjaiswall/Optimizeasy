@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div>
-      <h2 fontSize="lg" fontWeight="bold" style="margin: 1em auto;"> CP Portal </h2>
+      <h2 fontSize="lg" fontWeight="bold" className="pageHeader"> CP Portal </h2>
     </div>
   );
 }

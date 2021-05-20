@@ -14,20 +14,22 @@ import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 function NavBar() {
   return (
-    <Box backgroundColor="lightseagreen" style="box-shadow: 0 2px 4px lightseagreen;">
-      <Flex justify="space-between" py={5}>
-        {/* <img src={logo} alt="logo" width="100px" height="100px" /> */}
-        <Text fontSize="lg" fontWeight="bold">
-          CP Portal
-        </Text>
-        <div className="navbar-nav mx-auto">
-          <Link href={'/'} className="nav-link"> Home </Link>
-          <Link href={'/dashboard'} className="nav-link"> Dashboard </Link>
-          <Link href={'/cart'} className="nav-link"> Cart </Link>
-          <Link href={'/profile'} className="nav-link"> Profile </Link>
-        </div>
-        < ColorModeSwitcher justifySelf="flex-end" />
-      </Flex>
+    <Box backgroundColor="lightseagreen" style={ {"box-shadow": "0 2px 4px lightseagreen"} }>
+      <nav>
+        <Flex justify="space-between" py={5}>
+          {/* <img src={logo} alt="logo" width="100px" height="100px" /> */}
+          <Text fontSize="lg" fontWeight="bold">
+            CP Portal
+          </Text>
+          <div className="navbar-nav mx-auto">
+            <Link href={'/'} className="nav-link"> Home </Link>
+            <Link href={'/dashboard'} className="nav-link"> Dashboard </Link>
+            <Link href={'/cart'} className="nav-link"> Cart </Link>
+            <Link href={'/profile'} className="nav-link"> Profile </Link>
+          </div>
+          < ColorModeSwitcher justifySelf="flex-end" />
+        </Flex>
+      </nav>
     </Box>
   );
 }
