@@ -1,7 +1,7 @@
 import { Box, Flex, HStack, IconButton, Text } from "@chakra-ui/react";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import logo from "./../logo.svg";
-import "./style.css";
+// import "./style.css";
 
 const Footer = () => {
   return (
@@ -32,7 +32,7 @@ const Footer = () => {
           />
         </HStack>
       </Flex>
-      <Text color="#333333">&copy; 2021 React, Inc. All rights reserved.</Text>
+      <Text color="#333333" className="text-center">&copy; 2021 CP Portal. All rights reserved.</Text>
     </Box>
   );
 };
