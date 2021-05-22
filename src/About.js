@@ -1,11 +1,18 @@
-import React from 'react'
-
+import React from "react";
+import Common from "./Common";
+import web from "../src/images/discuss.jpg";
 const About = () => {
-    return (
-        <>
-        <h1> Welcome to About</h1>
-        </>
-    );
+  return (
+    <>
+      <Common
+        para1="About Us"
+        para2="We are the team of professionals."
+        imgsrc={web}
+        btname="Contact Us"
+        visit="/contact"
+      />
+    </>
+  );
 };
 
 export default About;

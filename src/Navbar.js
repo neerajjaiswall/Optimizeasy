@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container-fluid nav_bg">
         <div className="row">
           <div className="col-12 mx-auto px-0">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
                   <strong>CP Portal</strong>
@@ -19,7 +19,7 @@ const Navbar = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-label="Toggle navigation"
                 >
                   <span className="navbar-toggler-icon"></span>
@@ -39,6 +39,16 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                     <li className="nav-item">
+                      <NavLink activeClassName = 'menu_active' exact className="nav-link" to="/dashboard">
+                        Dashboard
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink activeClassName = 'menu_active' exact className="nav-link" to="/courses">
+                        Courses
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
                       <NavLink activeClassName = 'menu_active' exact className="nav-link" to="/about">
                         About
                       </NavLink>
@@ -49,11 +59,7 @@ const Navbar = () => {
                         Contact
                       </NavLink>
                     </li>
-                    <li className="nav-item">
-                      <NavLink activeClassName = 'menu_active' exact className="nav-link" to="/dashboard">
-                        Dashboard
-                      </NavLink>
-                    </li>
+
                     <li className="nav-item">
                       <Button colorScheme="blue" variant="outline">
                         Sign In

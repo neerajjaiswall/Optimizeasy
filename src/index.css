@@ -11,6 +11,11 @@
   background: white;
 }
 
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
 .navbar-brand {
   font-size: 1.9rem;
   color: #565387;

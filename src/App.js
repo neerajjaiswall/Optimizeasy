@@ -12,6 +12,7 @@ import Contact from "./Contact";
 import Dashboard from "./Dashboard";
 import Navbar from "./Navbar";
 import Footer from './components/footer';
+import Courses from "./Courses";
 
 const App = () => {
 	return (
@@ -23,6 +24,7 @@ const App = () => {
 				<Route exact path = "/contact" component = {Contact} />
 				<Route exact path = "/about" component = {About} />
 				<Route path='/dashboard' component={Dashboard} />
+				<Route path='/courses' component={Courses} />
 				<Redirect to = "/" />
 			</Switch>
 			<Footer />
