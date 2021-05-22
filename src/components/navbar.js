@@ -1,40 +1,74 @@
-import { Box, Flex, Link, Text } from "@chakra-ui/react";
-// import logo from "./../logo.svg";
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import {
+  Box,
+  Flex,
+  Avatar,
+  HStack,
+  Link,
+  IconButton,
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  useDisclosure,
+  Stack,
+} from "@chakra-ui/react";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-// const MenuToggle = ({ toggle, isOpen }) => {
-//   return (
-//     <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-//       {isOpen ? <CloseIcon /> : <MenuIcon />}
-//     </Box>
-//   )
-// }
-
-// Refer: https://raptis.wtf/blog/create-a-navbar-with-chakra-ui-react/
-
-function NavBar() {
+const NavBar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box backgroundColor="lightseagreen" style={ {"box-shadow": "0 2px 4px lightseagreen"} }>
-      <nav>
-        <Flex justify="space-between" py={5}>
-          {/* <img src={logo} alt="logo" width="100px" height="100px" /> */}
-          <Text fontSize="lg" fontWeight="bold">
-            CP Portal
-          </Text>
-          <div className="navbar-nav mx-auto">
-            <Link href={'/'} className="nav-link"> Home </Link>
-            <Link href={'/dashboard'} className="nav-link"> Dashboard </Link>
-            <Link href={'/cart'} className="nav-link"> Cart </Link>
-            <Link href={'/profile'} className="nav-link"> Profile </Link>
-          </div>
-          < ColorModeSwitcher justifySelf="flex-end" />
-        </Flex>
-      </nav>
+    <Box px={4}>
+      <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <IconButton
+          size={"md"}
+          icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+          aria-label={"Open Menu"}
+          display={{ md: "none" }}
+          onClick={isOpen ? onClose : onOpen}
+        />
+        <Link href="/">
+          <strong>CP Portal</strong>
+        </Link>
+        <HStack spacing={8} alignItems={"center"}>
+          <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
+            <Link href="/">Home</Link>
+            <Link href="/courses">Courses</Link>
+            <Link href="/contact">Contact</Link>
+          </HStack>
+          <Flex alignItems={"center"}>
+            {true ? (
+              <Menu>
+                <MenuButton as={Button} rounded={"full"} cursor={"pointer"}>
+                  <Avatar
+                    size={"sm"}
+                    src={
+                      "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9"
+                    }
+                  />
+                </MenuButton>
+                <MenuList>
+                  <MenuItem>Profile</MenuItem>
+                  <MenuItem>My Courses</MenuItem>
+                  <MenuItem>Log Out</MenuItem>
+                </MenuList>
+              </Menu>
+            ) : (
+              <Button>Login / Signup</Button>
+            )}
+          </Flex>
+        </HStack>
+      </Flex>
+      {isOpen ? (
+        <Box pb={4} display={{ md: "none" }}>
+          <Stack as={"nav"} spacing={4}>
+            <Link href="/">Home</Link>
+            <Link href="/courses">Courses</Link>
+            <Link href="/contact">Contact</Link>
+          </Stack>
+        </Box>
+      ) : null}
     </Box>
   );
-}
-
+};
 export default NavBar;
-
-
-

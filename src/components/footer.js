@@ -1,14 +1,14 @@
-import { Box, Flex, HStack, IconButton, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, IconButton, Text, Link } from "@chakra-ui/react";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import logo from "./../logo.svg";
-// import "./style.css";
 
 const Footer = () => {
   return (
     <Box backgroundColor="#d0f4e4">
-      <Flex justify="space-between" px={32} py={16}>
-        <img src={logo} alt="logo" width="200px" height="100px" />
-        <HStack spacing={8}>
+      <Flex justify="space-between" px={16} py={8}>
+        <Link href="/">
+          <strong>CP Portal</strong>
+        </Link>
+        <HStack spacing={4}>
           <IconButton
             color="#333333"
             backgroundColor="#d0f4e4"
@@ -32,7 +32,9 @@ const Footer = () => {
           />
         </HStack>
       </Flex>
-      <Text color="#333333" className="text-center">&copy; 2021 CP Portal. All rights reserved.</Text>
+      <Text color="#333333" className="text-center">
+        &copy; 2021 CP Portal. All rights reserved.
+      </Text>
     </Box>
   );
 };
