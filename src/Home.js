@@ -30,22 +30,22 @@ const Home = () => {
         <Box w={{ md: "1/2" }}>
           <Box py="10%" px="10%">
             <Heading>Why Learn Here</Heading>
-            <Box backgroundColor="white" my={5} px={2}>
+            <Box backgroundColor="#dfee" borderLeft=".25em solid green" my={5} px={2}>
               <Text fontSize={30}>Low Cost</Text>
               <Text fontSize={20}>
                 We provide course at very low price comparable to other online
                 courses.{" "}
               </Text>
             </Box>
-            <Box backgroundColor="white" my={5} px={2}>
+            <Box backgroundColor="#dfee" borderLeft=".25em solid green" my={5} px={2}>
               <Text fontSize={30}>Best Instructor</Text>
               <Text fontSize={20}>
                 Instructors of our courses are best programmer in world with
                 lots of experience.
               </Text>
             </Box>
-            <Box backgroundColor="white" my={5} px={2}>
-              <Text fontSize={30}>Learn topic wise topic</Text>
+            <Box backgroundColor="#dfee" borderLeft=".25em solid green" my={5} px={2}>
+              <Text fontSize={30}>Learn topic wise</Text>
               <Text fontSize={20}>
                 Our courses are dedicated over a single topic so that you can
                 study different topics with different instructors.

@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Footer from "./components/footer";
 import NavBar from "./components/navbar";
 import Courses from "./Courses";
+import CourseDetails from "./CourseDetails";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/contact" component={Contact} />
+          <Route path="/courses/course-details" component={CourseDetails} />    {/* Placing this Route below /courses Route has caused Routing issue, by routing to same page as its parent directory /courses */}
           <Route path="/courses" component={Courses} />
           <Redirect to="/" />
         </Switch>
