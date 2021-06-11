@@ -11,7 +11,7 @@ const Home = () => {
           <Box py="25%" px="10%">
             <Text fontSize={40}>Learn and Grow with </Text>
             <Text fontSize={60} color="#333333">
-              CP Portal
+              Optimizeasy
             </Text>
             <Text fontSize={20}>
               We are proudly teaching competitive programming topics with

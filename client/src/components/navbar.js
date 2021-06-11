@@ -121,7 +121,7 @@ const NavBar = () => {
           onClick={isOpen ? onClose : onOpen}
         />
         <Link href="/">
-          <strong>CP Portal</strong>
+          <strong>OPTIMIZEASY</strong>
         </Link>
         <HStack spacing={8} alignItems={"center"}>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
