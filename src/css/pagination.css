@@ -1,0 +1,190 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+    width:100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pagination a {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3182ce;
+    color: #3182ce;
+  }
+  
+  .pagination__link {
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+
+  }
+  
+  .pagination__link--active a {
+    color: #fff;
+    background: #3182ce;
+    
+  }
+  
+  .pagination__link--disabled a {
+    color: rgb(198, 197, 202);
+    border: 1px solid rgb(198, 197, 202);
+  }
+  
+
+  section {
+    display: grid;
+    grid-template-columns: var(--page-margin) [center-start] 1fr [center-end] var(--page-margin);
+  }
+  section > * {
+    grid-column: center;
+  }
+  
+  .cards-wrapper {
+    grid-column: center-start/-1;
+    overflow: auto;
+    display: flex;
+    padding-bottom: 1em;
+  }
+  .cards-wrapper .card {
+    background-color: #d0f0ee;
+    /* color: #15928A; */
+    height: 20em;
+    min-width: 13em;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards-wrapper .card p {
+    font-size: 1.5em;
+  }
+  .cards-wrapper .card:last-child {
+    margin-right: 0;
+  }
+  .cards-wrapper::after {
+    content: "";
+    display: block;
+    min-width: var(--page-margin);
+  }
+
+
+.cards-wrapper-pagination {
+display: block;
+width: 100%;
+
+  }
+
+  .cards-wrapper-pagination .card {
+    background-color: #d0f0ee;
+    color: #15928A;
+    height: 20em;
+    min-width: 13em;
+    margin-top: 1rem;
+    margin-bottom : 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .recent-card {
+    background: #fff;
+    min-width: 22rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out; 
+    margin-right: 1.5em;
+    height: 31em;
+    
+  }
+  .recent-card:hover {
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.1), 1px 3px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(5px);
+  }
+  .recent-card .image-box {
+    height: 30vh;
+    border-radius: inherit;
+    border: none;
+    background: #70bee6;
+  }
+  .recent-card .image-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .recent-card .recent-card-content {
+    padding: 1.3rem;
+  }
+  .recent-card .tag {
+    border: 1px solid #70bee6;
+    padding: 0.3rem 1rem;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+  .recent-card .recent-card-title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .recent-card .sub-title {
+    color: gray;
+  }
+  .recent-card .rating {
+    margin-top: 0.5rem;
+  }
+  .recent-card .rating .fas {
+    color: gold;
+  }
+  .recent-card .price-box {
+    display: flex;
+    margin-top: 0.6rem;
+    gap: 1rem;
+  }
+  .recent-card .price-box p {
+    color: black;
+    font-weight: bold;
+  }
+  .recent-card .price-box p::before {
+    content: "₹";
+    margin-right: 2px;
+    color: gray;
+  }
+  .recent-card .price-box .old-price {
+    text-decoration: line-through;
+    font-weight: normal;
+    color: gray;
+  }
+  .recent-card .btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background: none;
+    border: 2px solid #70bee6;
+    transition: 0.3s ease;
+  }
+  .recent-card .btn:hover {
+    cursor: pointer;
+    background: #70bee6;
+    color: #fff;
+  }
+
+  .search-category-div{
+
+      display: flex;
+      width: 100%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .search-category-div{
+      display:block;
+    }
+    
+  }
