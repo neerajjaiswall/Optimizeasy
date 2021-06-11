@@ -13,8 +13,7 @@ import {
   useDisclosure,
   Stack,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-
+import { HamburgerIcon, CloseIcon, } from "@chakra-ui/icons";
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -30,6 +29,8 @@ const NavBar = () => {
         <Link href="/">
           <strong>CP Portal</strong>
         </Link>
+  
+
         <HStack spacing={8} alignItems={"center"}>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
             <Link href="/">Home</Link>
@@ -47,7 +48,11 @@ const NavBar = () => {
                     }
                   />
                 </MenuButton>
+                {/* <Box w="30%" className="mb-4" textAlign="end"> */}
+				
+			
                 <MenuList>
+                  
                   <MenuItem>Profile</MenuItem>
                   <MenuItem>My Courses</MenuItem>
                   <MenuItem>Log Out</MenuItem>
