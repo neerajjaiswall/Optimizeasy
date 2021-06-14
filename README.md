@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# OptimizEasy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Optimizeasy - The right way to implement solutions, is a one-stop solution to learn algorithmic and data structures concepts online and as per our comfort. 
 
-## Available Scripts
+## About OptimizEasy
 
-In the project directory, you can run:
+Optimizeasy aims to cover a vast variety of all algorithmic and data structures concepts and provides them as complete conceptual course units ready for the grab.
+This platform connects experts with aspirants aiming to flourish their current knowledge and helps them in acing their game of DS&A as well as Competitive Programming
 
-### `npm start`
+## Using the Source Code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The source code for Optimizeasy is currently open-sourced and is made available for learnings and further improvisations that are desired of our website. To setup the code base locally and get things running, follow the given steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### One Time Setup - required only for initial case
 
-### `npm test`
+1. Download and Install the latest version of [Node.js](https://nodejs.org/en/download/), if haven't already.
+2. Clone this repository with `git clone https://github.com/neerajjaiswall/Optimizeasy/`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps to be followed on every updation
 
-### `npm run build`
+1. Open a terminal at your GitHub Directory, and run `git pull` to get the latest version of code to work with.
+2. Run `npm install ./client/` followed by `npm install ./server/`, to ensure that all the latest dependencies are installed at your code base.
+3. Make necessary changes and updations to the code files as required.
+4. Confirm your changes locally, and ensure that the code is running fine, by opening two terminals - one in client/ directory with command `npm start` and another in server/ directory using `node app`
+5. Add the changes to be commited using [`git add .`](https://git-scm.com/docs/git-add)
+6. Commit the changes using `git commit -m <commit-message>`
+7. Double ensure that there has not been any other updation on the git server from any other end, and that you will be pushing the changes over the latest updation, using `git pull`. Beware of any merge conflicts, and good luck resolving them, if any. 🙂😉 
+8. Finally, push your changes to the server using `git push`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for your interest in our project. We welcome developers from all over the world to add value to the existing version of this web app. If you find any issues or suggestions for the project, please feel free to mention the same over issues. Your pull requests are also welcome for any of our open issues. Please be sure to discuss if you have any queries, and we will be happy to see what you bring to our repo. 😃
